@@ -26,5 +26,6 @@ Upon completion of this course, students should be able to:
 You can find the resources for this course in this folder, including:
 - Lecture notes
 - Lab exercises
+- Quizzes
 
 You can also find additional resources on the course website.
