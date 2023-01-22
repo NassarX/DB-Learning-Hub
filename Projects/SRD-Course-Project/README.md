@@ -2,7 +2,7 @@
 
 Welcome to retail chains RDBMS project! 
 
->A Relational Database Management System (RDBMS) build for retails chain stores as a part of **`Storing and Retrieving Data`**  course - [MDSAA-DS](www.novaims.unl.pt/MDSAA-DS) - Fall 2022
+>A Relational Database Management System (RDBMS) build for retails chain stores as a part of **`Storing and Retrieving Data`**  course - [MDSAA-DS](https://www.novaims.unl.pt/MDSAA-DS) - Fall 2022
 
 ### A brief details of the Project
 

@@ -1,6 +1,8 @@
 # SRD - Storing and Retrieving Data
 
-Instructor: Mijail Naranjo (mijail.naranjo@novaims.unl.pt)
+> **`Storing and Retrieving Data`**  course taught at Nova IMS. MSc [MDSAA-DS](https://www.novaims.unl.pt/MDSAA-DS) - Fall 2022/2023
+>
+>Instructor: Mijail Naranjo
 
 ## General objectives
 
