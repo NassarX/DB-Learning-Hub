@@ -7,6 +7,7 @@ Welcome to the DB-Learning-Hub repository! This is a collection of resources and
 - **Cheatsheets**: Contains quick reference guides for different database concepts and commands.
 - **Interviews**: Contains questions and answers for common database-related interview questions.
 - **LeetCode**: Contains solutions to database-related LeetCode problems.
+- **Projects**: Contains subfolders for each project I did during my learning journey.
 
 ## How to use this repository
 
