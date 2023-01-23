@@ -164,6 +164,7 @@ SHOW VARIABLES LIKE "c%";
 
 
 - ****Indexes****
+    - To display indexes in table ```SHOW INDEX FROM Actors;```
     - ****Index Types:****
         - ****Clustered Index****
             - Table rows are sorted and kept in a B-tree structure

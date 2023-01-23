@@ -35,5 +35,5 @@
         - **Graph databases** (Neo4J), and search.
         - **Engines** (Solr, ElasticSearch, Splunk).
 
-> **Big Data**
-> usually includes data sets with sizes beyond the capability of traditional software tools (e.g., SQL technologies) to capture, curate, manage, and process data within a tolerable elapsed time.
+- **Big Data**
+> Big Data usually includes data sets with sizes beyond the capability of traditional software tools (e.g., SQL technologies) to capture, curate, manage, and process data within a tolerable elapsed time.
