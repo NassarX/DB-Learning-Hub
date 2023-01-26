@@ -360,3 +360,64 @@ Local and cascaded check clauses are used to determine the scope of rule testing
          UNTIL CurrentRow > TotalRows
          END REPEAT Print_loop;
         ```
+- Stored Functions
+    
+    
+|  | Stored Procedure | Stored Function |
+| --- | --- | --- |
+| Call the other | Can call SF | Not possible |
+| Inline SQL Statements | Only by CALL keyword | can be used in SQL statements |
+| Compile State | Pre-compiled and Stored | Compiled at Runtime |
+| Return value | Optional | Must |
+| # Return values | no restriction | one value |
+| Params modes | IN, OUT, INOUT | Only IN |
+- Data type of the return value is specified after the **RETURN**
+ keyword.
+- The function body must have at least one **RETURN**
+ statement.
+- **DETERMINISTIC** or **NOT DETERMINISTIC** → for the same input parameters, the result will either be the same or different.
+    
+    ```sql
+    DELIMITER **
+    
+    CREATE FUNCTION function_name(parameter_list)
+    
+    RETURNS datatype
+    
+    [NOT] DETERMINISTIC
+    
+    BEGIN
+    
+    function body
+    
+    END **
+    
+    DELIMITER ;
+    ```
+    
+    ```sql
+    DELIMITER **
+    
+    CREATE FUNCTION DigitalAssetCount(ID INT) 
+    RETURNS VARCHAR(50)
+    DETERMINISTIC
+    BEGIN
+     DECLARE ReturnMessage VARCHAR(50);
+     DECLARE Number INT DEFAULT 0;
+     SELECT COUNT(*) INTO Number FROM DigitalAssets WHERE ActorId = ID;
+    
+     IF Number = 0 THEN
+         SET ReturnMessage = 'The Actor does not have any digital assets.';
+     ELSE
+         SET ReturnMessage = CONCAT('The Actor has ', Number, ' digital assets');
+     END IF;
+     
+     -- return the customer level
+     RETURN (ReturnMessage);
+    END**
+    DELIMITER
+    ```
+    
+    ```sql
+    SELECT Id, DigitalAssetCount(Id) AS Count FROM Actors;
+    ```
